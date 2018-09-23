@@ -56,7 +56,7 @@ app.get("/user/:id", (req, res) => {
     });
 });
 
-app.delete("/todos/:id", (req, res) => {
+app.delete("/user/:id", (req, res) => {
   var id = req.params.id;
 
   if (!ObjectID.isValid(id)) {
